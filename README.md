@@ -2,9 +2,9 @@
 
 Monte Carlo synthesis of the stellar population of the Milky Way (MW). Each star is described by its initial mass, age, birth metallicity and present-day evolutionary state (main sequence, white dwarf, neutron star or black hole). The simulated G dwarfs are compared with observed metallicity distribution functions (MDFs) of the solar neighbourhood, using a closed-box model and models with gas infall.
 
-Project 3 of the course on computational astrophysics, Departamento de Física, Universidad Técnica Federico Santa María (UTFSM), 2026.
+Project 3 of the course on computational astronomy II (AST305), Departamento de Física, Universidad Técnica Federico Santa María (UTFSM), 2026.
 
-**Authors:** Benjamín Carrillo Carrasco, [co-author]
+**Authors:** Benjamín Carrillo Carrasco, Nicolás Miranda Cáceres
 
 ---
 
@@ -190,4 +190,4 @@ The files in `observed_mdf/` contain the [Fe/H] or [Mg/H] values of the followin
 
 ## Use of AI tools
 
-The analysis section of the notebook was written with the help of Claude Code for efficiency. The simulation section was optimized with Claude, but the structure and logic of the infall model and of the remnant assignment are the authors' own.
+The analysis section of the notebook was written with the help of Claude Code for efficiency. The simulation section was optimized with Claude, but the structure and logic of the infall model and of the remnant assignment are the authors' own. This README file was also written with the help of Claude.
