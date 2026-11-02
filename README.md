@@ -46,6 +46,19 @@ Approximate runtime for N = 10⁶: ≈21 min with rejection sampling and ≈5 s 
 
 To change a parameter, edit the parameters cell and run the notebook again. Only the simulations affected by the change are regenerated. Set `REDO = True` to force all the simulations to run again.
 
+## Model assumptions
+
+- The MW is treated as a one-zone model: no spatial structure, dynamics or disk–bulge–halo components.
+- All stars are single (no binaries).
+- Age of the population: T_MW = 10 Gyr, with a constant star formation rate.
+- Initial masses follow the Kroupa (2001) IMF between 0.08 and 120 M☉.
+- Main-sequence lifetime t_MS = 10 Gyr (M/M☉)^−2.5, independent of metallicity.
+- Remnants from initial–final mass relations: Miller et al. (2026) for WDs (Eq. 9 extrapolated up to M_up = 9 M☉) and Raithel et al. (2018) for NSs and BHs, with probabilistic NS/BH outcomes in the mixed mass ranges and a linear interpolation of the BH mass in 40–45 M☉.
+- Closed-box chemical evolution with instantaneous mixing and a constant effective yield, calibrated so that Z_gas(T_MW) = Z☉; the gas fraction decreases linearly from 1 to μ_f = 0.1.
+- Infall models: exponential accretion of pristine gas (Z_in = 0), with all the other ingredients kept as in the base model.
+- The model metallicity is compared with observations using [M/H] ≈ [Fe/H].
+- G dwarfs are selected as main-sequence stars with 0.8 < M/M☉ < 1.05.
+
 ## Flowchart
 
 ```mermaid
@@ -182,11 +195,19 @@ The files in `observed_mdf/` contain the [Fe/H] or [Mg/H] values of the followin
 
 ## References
 
-- Kroupa, P. 2001, MNRAS, 322, 231
-- Miller, D. R., et al. 2026, ApJ, 996, 69
-- Raithel, C. A., Sukhbold, T., & Özel, F. 2018, ApJ, 856, 35
+- Adibekyan, V. Zh., Sousa, S. G., Santos, N. C., et al. 2012, A&A, 545, A32
 - Chiappini, C., Matteucci, F., & Gratton, R. 1997, ApJ, 477, 765
-- Tinsley, B. M. 1980, Fundamentals of Cosmic Physics, 5, 287
+- Conroy, C. 2013, ARA&A, 51, 393
+- Haywood, M. 2001, MNRAS, 325, 1365
+- Holmberg, J., Nordström, B., & Andersen, J. 2009, A&A, 501, 941
+- Hosek, M. W., Jr., et al. 2020, AJ, 160, 143
+- Kroupa, P. 2001, MNRAS, 322, 231
+- Matteucci, F. 2021, A&ARv, 29, 5
+- Miller, D. R., Caiazzo, I., Heyl, J., et al. 2026, ApJ, 996, 69
+- Press, W. H., Teukolsky, S. A., Vetterling, W. T., & Flannery, B. P. 2007, Numerical Recipes, 3rd ed. (Cambridge: Cambridge Univ. Press)
+- Raithel, C. A., Sukhbold, T., & Özel, F. 2018, ApJ, 856, 35
+- Rocha-Pinto, H. J., & Maciel, W. J. 1996, MNRAS, 279, 447
+- Tinsley, B. M. 1980, Fundam. Cosmic Phys., 5, 287
 
 ## Use of AI tools
 
